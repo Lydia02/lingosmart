@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Page</title>
+    <link rel="stylesheet" href="/app/static/css/user.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <h2>Please Reset Your Password Here</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">New Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Reset</button>
+            </form>
+            <div class="options">
+                <a href="login.html" id="forgotPassword">Sign In</a>
+                <span> | </span>
+                <a href="signup.html" id="signUp">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        ©2024 LingoSmart. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
