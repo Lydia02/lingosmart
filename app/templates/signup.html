@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up Page</title>
-    <link rel="stylesheet" href="/app/static/css/user.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/user.css') }}"
+    />
+  </head>
+  <body>
     <div class="main-content">
-        <div class="container">
-            <h2>Your Gateway To Fluency</h2>
-            <form id="signupForm">
-                <div class="name-group">
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="secondname">Second Name</label>
-                        <input type="text" id="secondname" name="secondname" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <button type="submit">Sign Up</button>
-            </form>
-            <div class="options">
-                <p>Already have an account?<span> | </span><a href="login.html" id="login">Sign In</a></p>
+      <div class="container">
+        <h2>Your Gateway To Fluency</h2>
+        <form id="signupForm">
+          <div class="name-group">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" required />
             </div>
+            <div class="form-group">
+              <label for="secondname">Second Name</label>
+              <input type="text" id="secondname" name="secondname" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="options">
+          <p>
+            Already have an account?<span> | </span
+            ><a href="{{ url_for('login') }}" id="login">Sign In</a>
+          </p>
         </div>
+      </div>
     </div>
-    <footer>
-        ©2024 LingoSmart. All rights reserved.
-    </footer>
+    <footer>©2024 LingoSmart. All rights reserved.</footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
