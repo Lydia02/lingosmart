@@ -1,17 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Easy Lingo</title>
-  </head>
-  <body>
-    <h1>Easy Lingo</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit
-      consectetur, laboriosam recusandae accusamus quo, quis atque, eos saepe
-      suscipit assumenda asperiores corrupti necessitatibus voluptatum harum
-      aliquid placeat sapiente qui.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/app/static/css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+
+</head>
+<body>
+    
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../index.html"><h1>LINGO<span>SMART</span></h1></a>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a>
+                        </li>
+                       
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav_buttons">
+                    <button onclick="window.location.href='login.html'">Login</button>
+                    <button onclick="window.location.href='signup.html'">Sign up</button>
+                  
+                </div>
+            </div>
+        </header>
+       
+        
+        
+        <!-- About Us Section -->
+         <div class="contact">
+            <h2>Contact Us</h2>
+            <form class="form">
+    
+                <div class="flex">
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>first name</span>
+                    </label>
+            
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>last name</span>
+                    </label>
+                </div>  
+                        
+                <label>
+                    <input class="input" type="email" placeholder="" required="">
+                    <span>email</span>
+                </label> 
+                    
+                <label>
+                    <input class="input" placeholder="" type="tel" required="">
+                    <span>contact number</span>
+                </label>
+                <label>
+                    <textarea class="input01" placeholder="" rows="3" required=""></textarea>
+                    <span>message</span>
+                </label>
+                
+                <button href="#" class="fancy">
+                  <span class="top-key"></span>
+                  <span class="text">submit</span>
+                  <span class="bottom-key-1"></span>
+                  <span class="bottom-key-2"></span>
+                </button>
+            </form>
+         </div>
+        
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Contact Information -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Stay updated with our latest news and updates on Language Learning.</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+        
+                        <!-- Quick Links -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Quick Links</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-home"></i> Home</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-recycle"></i> Enroll in courses</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-info-circle"></i> About Us</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Services -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Services</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-language"></i> Kinyarwanda</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-headphones"></i> Kiswahili</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-language"></i> French</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-headphones"></i> English</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <!-- Help -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#"><i class="fa-solid fa-flag"></i> Reporting</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-file-alt"></i> Documentation</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-shield-alt"></i> Support Policy</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-user-secret"></i> Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                      
+        
+                        <!-- Social Media -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Connect with Us</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                    <a href="#" class="fab fa-whatsapp"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">&copy; Language Learning website. 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Powered by <i class="icon_heart"></i><a href="#" target="_blank"> LingoSmart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</body>
+
 </html>
