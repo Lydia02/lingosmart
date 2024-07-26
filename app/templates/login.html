@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/user.css') }}"
-    />
+    <link rel="stylesheet" href="/app/static/css/user.css" />
   </head>
   <body>
     <div class="main-content">
@@ -25,11 +22,11 @@
           <button type="submit">Login</button>
         </form>
         <div class="options">
-          <a href="{{ url_for('reset') }}" id="forgotPassword"
+          <a href="/app/templates/signup.html" id="forgotPassword"
             >Forgot Password?</a
           >
           <span> | </span>
-          <a href="{{ url_for('signup') }}" id="signUp">Sign Up</a>
+          <a href="/app/templates/signup.html" id="signUp">Sign Up</a>
         </div>
       </div>
     </div>
