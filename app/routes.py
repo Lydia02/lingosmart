@@ -17,6 +17,11 @@ def signup():
     return render_template("signup.html")
 
 
+@app.route("/dashboard", methods=['GET', 'POST'])
+def dashboard():
+    return render_template('dashboard.html')
+
+
 
 
 
