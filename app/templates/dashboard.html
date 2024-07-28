@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/app/static/css/dashboard.css"> <!-- Add your CSS file for courses here -->
+    <title>Lingo Smart</title>
+    <link rel="stylesheet" href="/app/static/css/each_course.css"> 
+    <link rel="stylesheet" href="/app/static/css/course.css">
+
 </head>
 <body>
     <header class="header">
         <div class="header-content responsive-wrapper">
             <div class="header-logo">
-                <a href="dashboard.html">
-                    <h3>LINGOSMART</h3>
-                </a>
+                <a href="dashboard.html" style="text-decoration: none;"><h1>LINGO<span>SMART</span></h1></a>
             </div>
             <div class="header-navigation">
                 <nav class="header-navigation-links">
-                    <a href="#"> Home </a>
-                    <a href="#">Courses</a>
-                    <a href="#">Resources</a>
-                    <a href="#" class="active">Settings</a>
+                    <a href="dashboard.html"> Home </a>
+                    <a href="course.html">Courses</a>
+                    <a href="dictionary.html">Resources</a>
+                    <a href="setting.html" class="active">Settings</a>
                 </nav>
                 <div class="header-navigation-actions">
-                    <a href="#" class="button">
+                    <a href="setting.html" class="button">
                         <i class="ph-lightning-bold"></i>
                         <span>User Profile</span>
                     </a>
@@ -33,46 +33,122 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <div class="responsive-wrapper">
-            <div class="main-header">
-                <h1>Home</h1>
-                <p>Welcome to your dashboard.</p>
-            </div>
-            <div class="content">
-                <div class="content-panel">
-                    <div class="vertical-tabs">
-                        <a href="#">Dashboard</a>
-                        <a href="#"> Kinyarwanda </a>
-                        <a href="#"> English </a>
-                        <a href="#"> Swahili </a>
-                        <a href="#"> French </a>
-                        <a href="#"> Review </a>
-                        <a href="#"><button class="Btn">
-  
-                            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-                            
-                            <div class="text">Logout</div>
-                          </button>
-                          
-                          
-                          </a>
-                    </div>
-                </div>
-                <div class="content-main">
-                    <h1>dashboard info here</h1>
-                    <h1>dashboard info here</h1>
-                    <h1>dashboard info here</h1>
-                    <h1>dashboard info here</h1>
-                    <h1>dashboard info here</h1>
-                </div>
-            </div>
+
+    <div class="info"> 
+        
+        <div class="sidebar">
+            <div class="vertical-tabs">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="kinyarwanda.html"> Kinyarwanda </a>
+                <a href="english.html"> English </a>
+                <a href="swahili.html"> Swahili </a>
+                <a href="french.html"> French </a>
+                <a href="dictionary.html"> Dictionary </a>
+                <a href="login.html"><button class="Btn">
+
+                    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                    
+                    <div class="text">Logout</div>
+                </button>
+                
+                
+                </a>
+            </div>        
         </div>
-    </main>
 
 
 
+        <div class="container">    
+            <main class="main">
+                <div class="responsive-wrapper">
+                    <div class="main-header">
+                        <h1>LINGO SMART</h1>
+                    </div>
+                    <article class="card">
+                        <div class="card-header">
+                            <div>
+                                <span><img src="/app/static/assets/language_learning.png" /></span>
+                                <p>Learn a language right here with hundreds of <a href = "course.html">free language-learning lessons.</a> Join us and have some fun.</p>
 
+                            </div>
+                        
+                    </article>
+                     
+                    <div class="main-header">
+                        <h1>What do you learn?</h1>
+                    </div>
+                    <div class="content">
+                        <div class="content-panel">
+                        </div>
+                        <div class="content-main">
+                            <div class="card-grid">
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="/app/static/assets/read.png" /></span>
+                                            <h3>Read</h3>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Read literature in the original language. Grow your vocabulary, master the language’s grammar, and broaden your horizons!</p>
+                                    </div>
+                                    
+                                </article>
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="/app/static/assets/speak.png" /></span>
+                                            <h3>Speak</h3>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Speak with native speakers on any topic you want (not just about the weather). Make friends in different parts of the Earth!</p>
+                                    </div>
+                                    
+                                </article>
+                                
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="/app/static/assets/understand.png" /></span>
+                                            <h3>Understand</h3>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Understand new things about the foreign country, its culture and traditions. Feel yourself like a piece of something global!</p>
+                                    </div>
+                                    
+                                </article>
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="/app/static/assets/write.png" /></span>
+                                            <h3>Write</h3>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Write to your foreign friends or conduct business correspondence with people from other countries and even continents!</p>
+                                    </div>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 LINGOSMART. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
