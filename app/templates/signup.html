@@ -6,47 +6,43 @@
     <title>Sign up Page</title>
     <link
       rel="stylesheet"
-      href="/app/static/css/user.css"
+      href="{{ url_for('static', filename='css/user.css') }}"
     />
   </head>
   <body>
     <div class="main-content">
       <div class="container">
         <h2>Your Gateway To Fluency</h2>
-        <form id="signupForm">
+        <form id="signupForm" action="" , method="POST">
+          {{form.csrf_token}}{{form.hidden_tag()}}
           <div class="name-group">
             <div class="form-group">
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname" name="firstname" required />
+              {{form.first_name(id="first_name")}}
             </div>
             <div class="form-group">
               <label for="secondname">Second Name</label>
-              <input type="text" id="secondname" name="secondname" required />
+              {{form.last_name(id="last_name")}}
             </div>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" required />
+            {{form.email(id="email")}}
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
+            {{form.password(id="password")}}
           </div>
           <div class="form-group">
             <label for="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              required
-            />
+            {{form.confirm_password(id="confirm_password")}}
           </div>
-          <button type="submit">Sign Up</button>
+          {{form.submit (class="btn")}}
         </form>
         <div class="options">
           <p>
             Already have an account?<span> | </span
-            ><a href="/app/templates/login.html" id="login">Sign In</a>
+            ><a href="{{url_for('login')}}" id="login">Sign In</a>
           </p>
         </div>
       </div>
