@@ -18,24 +18,28 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color:rgba(17, 24, 39, 1);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 450px;
   text-align: center;
-  box-sizing: border-box; /* Ensures padding and border are included in width and height */
-  margin-bottom: 40px; /* Adds space between container and footer */
+  box-sizing: border-box; 
+  margin-bottom: 40px; 
 }
 
 h2 {
   margin-bottom: 20px;
+  color:aliceblue;
 }
 
 .name-group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+label{
+  color:aliceblue;
 }
 
 .name-group .form-group {
