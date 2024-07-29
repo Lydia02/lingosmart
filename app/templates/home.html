@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="/app/static/css/contactus.css" />
+    <link rel="stylesheet" href="/app/static/css/home.css" />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/home.css')}}"
@@ -50,15 +52,15 @@
           </div>
           <div class="navlinks">
             <ul>
-              <li><a href="{{url_for('home')}}">Home</a></li>
-              <li><a href="{{url_for('services')}}">Services</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
 
-              <li><a href="{{url_for('aboutus')}}">About Us</a></li>
-              <li><a href="{{url_for('contactus')}}">Contact Us</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="nav_buttons">
-            <a href="{{url_for('login')}}"><button>Login</button></a>
+            <a href="login.html"><button>Login</button></a>
             <button onclick="window.location.href='signup.html'">
               Sign up
             </button>
@@ -89,13 +91,17 @@
         </div>
       </div>
       <br /><br /><br /><br />
-      <h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
-      </h3>
+      <p class="text">
+      <b>LingoSmart</b> is a comprehensive website dedicated to revolutionizing the language learning environment in Rwanda. Its mission is to serve both local residents and foreigners by providing a carefully crafted digital platform. The initiative is anchored in four well-defined objectives that adhere to the SMART criteria, ensuring each goal is specific, measurable, achievable, relevant, and time-bound.</p>
+
+<p class="text">First, LingoSmart aims to <b>enhance language proficiency among local residents</b> by offering a diverse range of language courses. These courses are specifically designed to improve reading, writing, speaking, and listening skills in multiple languages. The platform uses interactive tools and engaging content to create an immersive learning experience. Progress is monitored through regular assessments and feedback, ensuring learners meet their language goals within a specified timeframe.</p>
+
+<p class="text">Second, LingoSmart seeks to <b>facilitate cultural integration for foreigners</b> residing in Rwanda. Understanding the local language and culture is crucial for foreigners to feel at home and fully participate in the community. The platform offers tailored courses focusing on Rwandan languages, including Kinyarwanda, and cultural practices. By setting measurable milestones, LingoSmart ensures that foreigners can track their progress and achieve fluency and cultural competency in a structured manner.</p>
+
+<p class="text">Third, the initiative is committed to <b>leveraging technology to provide accessible language education</b>. LingoSmart's digital platform is designed to be user-friendly and accessible to people of all ages and technical abilities. The platform includes features such as mobile compatibility, offline access, and interactive lessons that cater to different learning styles. By setting achievable targets, the initiative ensures that technological barriers are minimized, making language learning accessible to a broader audience.</p>
+
+<p class="text">Lastly, LingoSmart strives to <b>create a sustainable language learning community</b>. This involves fostering a network of learners, educators, and cultural enthusiasts who support and motivate each other. The platform hosts regular events, workshops, and discussion forums that encourage interaction and knowledge sharing. By setting time-bound objectives, LingoSmart ensures the continuous growth and active participation of the community, contributing to the overall success of the initiative.
+      </p>
       <br /><br /><br /><br />
       <footer class="new_footer_area bg_color">
         <div class="new_footer_top">
