@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="/app/static/css/contactus.css" />
+    <link rel="stylesheet" href="/app/static/css/home.css" />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/home.css')}}"
@@ -50,15 +52,15 @@
           </div>
           <div class="navlinks">
             <ul>
-              <li><a href="{{url_for('home')}}">Home</a></li>
-              <li><a href="{{url_for('services')}}">Services</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
 
-              <li><a href="{{url_for('aboutus')}}">About Us</a></li>
-              <li><a href="{{url_for('contactus')}}">Contact Us</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="nav_buttons">
-            <a href="{{url_for('login')}}"><button>Login</button></a>
+            <a href="login.html"><button>Login</button></a>
             <button onclick="window.location.href='signup.html'">
               Sign up
             </button>
