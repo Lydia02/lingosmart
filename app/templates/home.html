@@ -46,7 +46,7 @@
       <header>
         <div class="navbar">
           <div class="logo">
-            <a href="home.html"
+            <a href="{{url_for('home')}}"
               ><h1>LINGO<span>SMART</span></h1></a
             >
           </div>
@@ -61,9 +61,7 @@
           </div>
           <div class="nav_buttons">
             <a href="{{url_for('login')}}"><button>Login</button></a>
-            <button onclick="window.location.href='signup.html'">
-              Sign up
-            </button>
+            <a href="{{url_for('signup')}}"><button>Sign up</button></a>
           </div>
         </div>
       </header>
@@ -76,7 +74,7 @@
               Get access to compact lessons from the experts and connect with a
               community of native speakers to help you master words faster.
             </p>
-            <a href="./authentication/getstarted.html"
+            <a href="{{url_for('signup')}}"
               >Learn for free
               <lord-icon
                 src="https://cdn.lordicon.com/vduvxizq.json"
@@ -201,7 +199,9 @@
                   <h3 class="f-title f_600 t_color f_size_18">Quick Links</h3>
                   <ul class="list-unstyled f_list">
                     <li>
-                      <a href="#"><i class="fa-solid fa-home"></i> Home</a>
+                      <a href="{{url_for('home')}}"
+                        ><i class="fa-solid fa-home"></i> Home</a
+                      >
                     </li>
                     <li>
                       <a href="#"
@@ -210,12 +210,12 @@
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('aboutus')}}"
                         ><i class="fa-solid fa-info-circle"></i> About Us</a
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('contactus')}}"
                         ><i class="fa-solid fa-envelope"></i> Contact Us</a
                       >
                     </li>
@@ -327,7 +327,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6 col-sm-7">
                 <p class="mb-0 f_400">
-                  &copy; Language Learning website. 2025 All rights reserved.
+                  &copy; Language Learning website. 2024 All rights reserved.
                 </p>
               </div>
               <div class="col-lg-6 col-sm-5 text-right">

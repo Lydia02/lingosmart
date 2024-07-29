@@ -48,65 +48,79 @@ def signup():
 
  
 @app.route('/services', methods=['GET', 'POST'])
+@login_required
 def services():
     return render_template('services.html')
 
 @app.route('/aboutus', methods=['GET', 'POST'])
+@login_required
 def aboutus():
     return render_template('aboutus.html')
 
 @app.route('/contactus', methods=['GET', 'POST'])
+@login_required
 def contactus():
     return render_template('contactus.html')
 
 @app.route("/dashboard", methods=['GET', 'POST'])
+@login_required
 def dashboard():
     return render_template('dashboard.html')
 
 
 @app.route('/kinyarwanda', methods=['GET', 'POST'])
+@login_required
 def kinyarwanda():
     return render_template('kinyarwanda.html')
 
 @app.route('/kinyarwanda_resource', methods=['GET', 'POST'])
+@login_required
 def kinyarwanda_resource():
     return render_template('kinya_resource.html')
 
 @app.route('/english', methods=['GET', 'POST'])
+@login_required
 def english():
     return render_template('english.html')
 
 
-@app.route('/english_resource', methods=['GET', 'POST'])    
+@app.route('/english_resource', methods=['GET', 'POST'])
+@login_required    
 def english_resource():
     return render_template('english_resource.html')
 
 @app.route('/swahili', methods=['GET', 'POST'])
+@login_required
 def swahili():
     return render_template('swahili.html')
 
 @app.route('/swahili_resource', methods=['GET', 'POST'])
+@login_required
 def swahili_resource():
     return render_template('swahili_resource.html')
 
 
 
 @app.route('/resourses', methods=['GET', 'POST'])
+@login_required
 def resourses():
     return render_template('resources.html')
 
 
 @app.route('/french', methods=['GET', 'POST'])
+@login_required
 def french():
     return render_template('french.html')
 
 
 @app.route('/french_resource', methods=['GET', 'POST'])
+@login_required
 def french_resource():
     return render_template('french_resource.html')
 
 
 @app.route('/courses', methods=['GET', 'POST'])
+@login_required
 def courses():  
     return render_template('course.html')
 

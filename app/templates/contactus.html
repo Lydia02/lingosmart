@@ -40,7 +40,7 @@
       <header>
         <div class="navbar">
           <div class="logo">
-            <a href="home.html"
+            <a href="{{url_for('home')}}"
               ><h1>LINGO<span>SMART</span></h1></a
             >
           </div>
@@ -54,10 +54,9 @@
             </ul>
           </div>
           <div class="nav_buttons">
-            <button onclick="window.location.href='login.html'">Login</button>
-            <button onclick="window.location.href='signup.html'">
-              Sign up
-            </button>
+            <a href="{{url_for('login')}}"><button>Login</button></a>
+
+            <a href="{{url_for('signup')}}"><button>Sign up</button></a>
           </div>
         </div>
       </header>
@@ -166,7 +165,9 @@
                   <h3 class="f-title f_600 t_color f_size_18">Quick Links</h3>
                   <ul class="list-unstyled f_list">
                     <li>
-                      <a href="#"><i class="fa-solid fa-home"></i> Home</a>
+                      <a href="{{url_for('home')}}"
+                        ><i class="fa-solid fa-home"></i> Home</a
+                      >
                     </li>
                     <li>
                       <a href="#"
@@ -175,7 +176,7 @@
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('aboutus')}}"
                         ><i class="fa-solid fa-info-circle"></i> About Us</a
                       >
                     </li>
@@ -202,22 +203,22 @@
                   <h3 class="f-title f_600 t_color f_size_18">Services</h3>
                   <ul class="list-unstyled f_list">
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('kinyarwanda')}}"
                         ><i class="fa-solid fa-language"></i> Kinyarwanda</a
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('swahili')}}"
                         ><i class="fa-solid fa-headphones"></i> Kiswahili</a
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('french')}}"
                         ><i class="fa-solid fa-language"></i> French</a
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="{{url_for('english')}}"
                         ><i class="fa-solid fa-headphones"></i> English</a
                       >
                     </li>

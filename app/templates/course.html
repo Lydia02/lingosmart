@@ -38,13 +38,13 @@
         
         <div class="sidebar">
             <div class="vertical-tabs">
-                <a href="dashboard.html">Dashboard</a>
-                <a href="kinyarwanda.html"> Kinyarwanda </a>
-                <a href="english.html"> English </a>
-                <a href="swahili.html"> Swahili </a>
-                <a href="french.html"> French </a>
-                <a href="resources.html"> Dictionary </a>
-                <a href="login.html"><button class="Btn">
+                <a href="{{url_for('dashboard')}}">Dashboard</a>
+                <a href="{{url_for('kinyarwanda')}}"> Kinyarwanda </a>
+                <a href="{{url_for('english')}}"> English </a>
+                <a href="{{url_for('swahili')}}"> Swahili </a>
+                <a href="{{url_for('french')}}"> French </a>
+                <a href="{{url_for('resourses')}}"> Dictionary </a>
+                <a href="{{url_for('logout')}}"><button class="Btn">
 
                     <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
                     
@@ -72,7 +72,7 @@
                                 <article class="card">
                                     <div class="card-header">
                                         <div>
-                                            <span><img src="/app/static/assets/Rwandan-Flag.gif" /></span>
+                                            <span><img src="{{url_for('static',filename='assets/Rwandan-Flag.gif')}}" /></span>
                                             <h3>Kinyarwanda</h3>
                                         </div>
                                         <label class="toggle">
@@ -84,13 +84,13 @@
                                         <p>Learn the Kinyarwanda language with our courses.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="kinyarwanda.html">Start Learning</a>
+                                        <a href="{{url_for('kinya_resources')}}">Start Learning</a>
                                     </div>
                                 </article>
                                 <article class="card">
                                     <div class="card-header">
                                         <div>
-                                            <span><img src="/app/static/assets/English_language.png" /></span>
+                                            <span><img src="{{url_for('static',filename='assets/english.png')}}" /></span>
                                             <h3>English</h3>
                                         </div>
                                         <label class="toggle">
@@ -108,7 +108,7 @@
                                 <article class="card">
                                     <div class="card-header">
                                         <div>
-                                            <span><img src="/app/static/assets/tanzania_flag.jpg" /></span>
+                                            <span><img src="{{url_for('static',filename='assets/swahili.png')}}" /></span>
                                             <h3>Swahili</h3>
                                         </div>
                                         <label class="toggle">
@@ -120,13 +120,13 @@
                                         <p>Discover Swahili through our comprehensive courses.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="swahili.html">Start Learning</a>
+                                        <a href="{{url_for('swahili')}}">Start Learning</a>
                                     </div>
                                 </article>
                                 <article class="card">
                                     <div class="card-header">
                                         <div>
-                                            <span><img src="/app/static/assets/french.jpg" /></span>
+                                            <span><img src="{{url_for('static',filename='assets/french.png')}}" /></span>
                                             <h3>French</h3>
                                         </div>
                                         <label class="toggle">
@@ -138,7 +138,7 @@
                                         <p>Master French with our engaging courses.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="french.html">Start Learning</a>
+                                        <a href="{{url_for('french')}}">Start Learning</a>
                                     </div>
                                 </article>
                             </div>
