@@ -12,9 +12,9 @@ try:
     my_cursor = my_db.cursor()
 
     # Explicitly select the database
-    my_cursor.execute("USE Okeita$SmartWaste")
+    my_cursor.execute("USE lingosmart$user")
 
-    print("Connected to database 'Nzavote'")
+    print("Connected to database")
 
 except mysql.connector.Error as err:
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
