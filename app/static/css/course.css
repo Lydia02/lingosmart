@@ -59,11 +59,22 @@ img {
 	}
 }
 
+
+
+
 .header-logo {
 	margin-right: 2.5rem;
 	display: flex;
 	align-items: center;
+	width:auto;
 		
+}
+
+.header-logo h1{
+	color:rgb(10, 10, 183) ;
+}
+.header-logo h1 span{
+	color:violet;
 }
 
 .header-navigation {

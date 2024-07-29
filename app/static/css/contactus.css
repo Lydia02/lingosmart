@@ -55,14 +55,12 @@ header {
 
 .logo {
     width: auto; /* Change width to auto */
-    height: 20%;
     display: flex; /* Add flex display */
     align-items: center; /* Align items vertically */
   }
   
   .logo h1 {
    font-size: 1.6em;
-   padding-left: 20px;
    color: var(--primary-color);
   }
 

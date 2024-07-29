@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="/app/static/css/user.css" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/user.css')}}"
+    />
   </head>
   <body>
     <div class="main-content">
       <div class="container">
         <h2>WELCOME BACK!</h2>
-        <form id="loginForm">
+
+        <form id="loginForm" action="" , method="POST">
+          {{form.csrf_token}}{{form.hidden_tag()}}
           <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required />
+            <label for="username">Email</label>
+            {{form.email (id='username')}}
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
+            {{form.password (id='password')}}
           </div>
-          <button type="submit">Login</button>
+          {{form.submit (class="btn")}}
         </form>
         <div class="options">
-          <a href="/app/templates/signup.html" id="forgotPassword"
+          <a href="{{url_for('reset')}}" id="forgotPassword"
             >Forgot Password?</a
           >
           <span> | </span>
-          <a href="/app/templates/signup.html" id="signUp">Sign Up</a>
+          <a href="{{url_for('signup')}}" id="signUp">Sign Up</a>
         </div>
       </div>
     </div>
