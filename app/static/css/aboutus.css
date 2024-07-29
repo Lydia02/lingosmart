@@ -1,17 +1,17 @@
 .section {
     text-align: center;
-    background: url("/app/static/assets/team banner.png");
+    background: url("/app/static/assets/team\ banner.png");
     background-size: contain;
-    background-position: center;
+    background-position: top;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 80px 0;
+    align-items: top;
+    padding: 0;
     min-height: 100vh;
     background-repeat: no-repeat; /* Prevent duplication of the image */
     background-size: 100% 60%; /* Set the height to be shorter */
-    background-position: center 40%; /* Adjust the vertical position as needed */
+    background-position: top 40%; /* Adjust the vertical position as needed */
 }
 
 .h2 {
