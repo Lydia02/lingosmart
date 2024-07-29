@@ -1,107 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lingo kinyarwanda</title>
-    <link rel="stylesheet" href="/app/static/css/each_course.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
-    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/each_course.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-content responsive-wrapper">
-            <div class="header-logo">
-                <a href="dashboard.html" style="text-decoration: none;"><h1>LINGO<span>SMART</span></h1></a>
-            </div>
-            <div class="header-navigation">
-                <nav class="header-navigation-links">
-                    <a href="dashboard.html"> Home </a>
-                    <a href="course.html">Courses</a>
-                    <a href="resources.html">Resources</a>
-                    <a href="setting.html" class="active">Settings</a>
-                </nav>
-                <div class="header-navigation-actions">
-                    <a href="setting.html" class="button">
-                        <i class="ph-lightning-bold"></i>
-                        <span>User Profile</span>
-                    </a>
-                    <a href="setting.html" class="avatar">
-                        <img src="/app/static/assets/profile.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
+      <div class="header-content responsive-wrapper">
+        <div class="header-logo">
+          <a href="{{url_for('dashboard')}}" style="text-decoration: none"
+            ><h1>LINGO<span>SMART</span></h1></a
+          >
         </div>
+        <div class="header-navigation">
+          <nav class="header-navigation-links">
+            <a href="{{url_for('dashboard')}}"> Home </a>
+            <a href="{{url_for('courses')}}">Courses</a>
+            <a href="{{url_for('resourses')}}">Resources</a>
+            <a href="{{url_for('setting')}}" class="active">Settings</a>
+          </nav>
+          <div class="header-navigation-actions">
+            <a href="{{url_for('setting')}}" class="button">
+              <i class="ph-lightning-bold"></i>
+              <span>User Profile</span>
+            </a>
+            <a href="setting.html" class="avatar">
+              <img
+                src="{{url_for('static',filename='assets/profile.jpg')}}"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="info"> 
-        
-        <div class="sidebar">
-            <div class="vertical-tabs">
-                <a href="dashboard.html">Dashboard</a>
-                <a href="kinyarwanda.html"> Kinyarwanda </a>
-                <a href="english.html"> English </a>
-                <a href="swahili.html"> Swahili </a>
-                <a href="french.html"> French </a>
-                <a href="resources.html"> Dictionary </a>
-                <a href="login.html"><button class="Btn">
+    <div class="info">
+      <div class="sidebar">
+        <div class="vertical-tabs">
+          <a href="{{url_for('dashboard')}}">Dashboard</a>
+          <a href="{{url_for('kinyarwanda')}}"> Kinyarwanda </a>
+          <a href="{{url_for('english')}}"> English </a>
+          <a href="{{url_for('swahili')}}"> Swahili </a>
+          <a href="{{url_for('french')}}"> French </a>
+          <a href="{{url_for('resourses')}}"> Dictionary </a>
+          <a href="{{url_for('logout')}}"
+            ><button class="Btn">
+              <div class="sign">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+                  ></path>
+                </svg>
+              </div>
 
-                    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-                    
-                    <div class="text">Logout</div>
-                </button>
-                
-                
+              <div class="text">Logout</div>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <main class="main">
+          <div class="responsive-wrapper">
+            <div class="main-header">
+              <h1>Learn Kinyarwanda</h1>
+              <img
+                src="{{url_for('static',filename='assets/learnkinya.jpeg')}}"
+              />
+            </div>
+            <p>
+              Kinyarwanda is the native language of Rwanda, offering insights
+              into the country's vibrant culture and history. By learning
+              Kinyarwanda, you can connect more deeply with Rwandans and
+              appreciate their traditions and way of life. It provides a unique
+              opportunity to engage with the Rwandan community and explore the
+              country's beautiful landscapes and stories. Kinyarwanda is spoken
+              by over 12 million people, primarily in Rwanda, but also in parts
+              of Uganda, the Democratic Republic of Congo, and Burundi. It is
+              one of Rwanda's official languages, along with English and French.
+              Kinyarwanda is part of the Bantu language family, sharing
+              similarities with Kirundi (spoken in Burundi) and other Bantu
+              languages.
+            </p>
+            <div class="main-header">
+              <h1>Peculiar Features</h1>
+              <p>
+                Kinyarwanda is known for its tonal nature, where the meaning of
+                words can change based on pitch and intonation. This aspect can
+                be challenging for learners, but it also makes the language
+                melodic and expressive. Kinyarwanda uses the Latin alphabet, and
+                its spelling is relatively phonetic, with each letter
+                representing a consistent sound. The language has a complex noun
+                class system, similar to Swahili, where nouns are categorized
+                into different classes that influence verb conjugation and
+                agreement with adjectives. Kinyarwanda verbs are inflected for
+                tense, aspect, and mood, with various prefixes and suffixes
+                added to the root verb.
+              </p>
+            </div>
+            <div class="main-header">
+              <h1>Learn Kinyarwanda Online</h1>
+              <p>
+                Learning Kinyarwanda can deepen your connection with Rwanda and
+                its people. There are several online resources available,
+                including language courses, audio lessons, and cultural
+                materials, to help you start learning Kinyarwanda. These
+                resources offer structured lessons on vocabulary, grammar, and
+                pronunciation, making it easier to learn the language and
+                appreciate Rwanda's rich cultural heritage.All these are here!
+              </p>
+            </div>
+            <div class="main-header">
+              <h1>
+                <a href="{{url_for('kinya_resources')}}">
+                  <button class="btn btn-primary">Learn Kinyarwanda</button>
                 </a>
-            </div>        
-        </div>
-
-
-
-        <div class="container">    
-            <main class="main">
-                <div class="responsive-wrapper">
-                    <div class="main-header">
-                        <h1>Learn Kinyarwanda</h1>
-                        <img src="/app/static/assets/learnkinya.jpeg">
-                    </div>
-                    <p>Kinyarwanda is the native language of Rwanda, offering insights into the country's vibrant culture and history. By learning Kinyarwanda, you can connect more deeply with Rwandans and appreciate their traditions and way of life. It provides a unique opportunity to engage with the Rwandan community and explore the country's beautiful landscapes and stories.
-
-                        Kinyarwanda is spoken by over 12 million people, primarily in Rwanda, but also in parts of Uganda, the Democratic Republic of Congo, and Burundi. It is one of Rwanda's official languages, along with English and French. Kinyarwanda is part of the Bantu language family, sharing similarities with Kirundi (spoken in Burundi) and other Bantu languages.</p>
-                    <div class="main-header">
-                        <h1>Peculiar Features</h1>
-                        <p>Kinyarwanda is known for its tonal nature, where the meaning of words can change based on pitch and intonation. This aspect can be challenging for learners, but it also makes the language melodic and expressive. Kinyarwanda uses the Latin alphabet, and its spelling is relatively phonetic, with each letter representing a consistent sound.
-
-                            The language has a complex noun class system, similar to Swahili, where nouns are categorized into different classes that influence verb conjugation and agreement with adjectives. Kinyarwanda verbs are inflected for tense, aspect, and mood, with various prefixes and suffixes added to the root verb.</p>
-                    </div>
-                    <div class="main-header">
-                       <h1>Learn Kinyarwanda Online</h1>
-                       <p>Learning Kinyarwanda can deepen your connection with Rwanda and its people. There are several online resources available, including language courses, audio lessons, and cultural materials, to help you start learning Kinyarwanda. These resources offer structured lessons on vocabulary, grammar, and pronunciation, making it easier to learn the language and appreciate Rwanda's rich cultural heritage.All these are here!</p>
-                    </div>
-                    <div class="main-header">
-                        <h1>
-                            <a href="kinya_resource.html">
-                                <button class="btn btn-primary">
-                                    
-                                    Learn Kinyarwanda
-                           
-                                </button>
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </main>
-        </div>
+              </h1>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
 
     <div class="footer">
-        <footer>
-            <p>&copy; 2024 LINGOSMART. All rights reserved.</p>
-        </footer>
+      <footer>
+        <p>&copy; 2024 LINGOSMART. All rights reserved.</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
