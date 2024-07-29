@@ -14,10 +14,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 
 # # mysql db to be connected to after everything is done
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://lingosmart:Oms%402002@lingosmart.mysql.pythonanywhere-services.com/lingosmart$user'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://lingosmart:Oms%402002@lingosmart.mysql.pythonanywhere-services.com/lingosmart$user'
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 csrf = CSRFProtect(app)
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
