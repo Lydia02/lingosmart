@@ -2,7 +2,6 @@
     text-align: center;
     background: url("/app/static/assets/team banner.png");
     background-size: contain;
-    background-attachment: fixed;
     background-position: center;
     position: relative;
     display: flex;
@@ -15,7 +14,7 @@
     background-position: center 40%; /* Adjust the vertical position as needed */
 }
 
-h2 {
+.h2 {
     color: white;
     font-size: 50px;
     font-weight: bold;
