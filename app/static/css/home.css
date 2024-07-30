@@ -33,14 +33,14 @@ body, html {
   }
   .hero .text_container a {
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #fbf9fc;
     color: var(--primary-color);
     border-radius: 5px;
     font-weight: 500;
     font-size: 18px;
   }
   .hero .text_container a:hover {
-    background-color: #f9feff;
+    background-color: rgb(253, 250, 255);
   }
   a {
     text-decoration: none !important;
@@ -68,7 +68,7 @@ body, html {
   }
 
   .card {
-    background: #b8ade7;
+    background-color: blueviolet;
     width: 400px;
     height: 400px;
     border-radius: 10px;
