@@ -50,3 +50,4 @@ For any questions or suggestions, please contact the team members:
 - Jean Pierre
 - Collins Otieno
 - Afsa Umutoniwase
+- Yvette Kwizera
