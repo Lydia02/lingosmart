@@ -54,10 +54,17 @@ body, html {
     padding-left: 50px;
   }
 
+  .center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
   .card_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px; ;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
   }
 
   .card {
