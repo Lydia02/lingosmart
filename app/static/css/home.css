@@ -53,3 +53,27 @@ body, html {
     padding-right: 50px;
     padding-left: 50px;
   }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px; ;
+  }
+
+  .card {
+    background: #f9feff;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:rgba(100, 100, 111, 0.) 0px 7px 29px 0px;
+    transition: all .3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-15px);
+  }
+
+  .card_container:hover > :not(:hover) {
+    opacity: 0.5;
+  }
