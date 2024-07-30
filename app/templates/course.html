@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Courses</title>
-    <link rel="stylesheet" href="/app/static/css/course.css"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/course.css')}}"> 
 
 </head>
 <body>
@@ -16,10 +16,10 @@
             </div>
             <div class="header-navigation">
                 <nav class="header-navigation-links">
-                    <a href="dashboard.html"> Home </a>
-                    <a href="course.html">Courses</a>
-                    <a href="resources.html">Resources</a>
-                    <a href="setting.html" class="active">Settings</a>
+                    <a href="{{url_for('dashboard')}}"> Home </a>
+                    <a href="{{url_for('courses')}}">Courses</a>
+                    <a href="{{url_for('resourses')}}">Resources</a>
+                    <a href="{{url_for('setting')}}" class="active">Settings</a>
                 </nav>
                 <div class="header-navigation-actions">
                     <a href="setting.html" class="button">
@@ -84,7 +84,7 @@
                                         <p>Learn the Kinyarwanda language with our courses.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="{{url_for('kinya_resources')}}">Start Learning</a>
+                                        <a href="{{url_for('kinyarwanda_resource')}}">Start Learning</a>
                                     </div>
                                 </article>
                                 <article class="card">

@@ -48,17 +48,17 @@ def signup():
 
  
 @app.route('/services', methods=['GET', 'POST'])
-@login_required
+
 def services():
     return render_template('services.html')
 
 @app.route('/aboutus', methods=['GET', 'POST'])
-@login_required
+
 def aboutus():
     return render_template('aboutus.html')
 
 @app.route('/contactus', methods=['GET', 'POST'])
-@login_required
+
 def contactus():
     return render_template('contactus.html')
 
