@@ -38,13 +38,27 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 55px;
+    grid-row-gap: 80px;
+
   }
+
+
 
   .faq-item {
     display: flex;
     flex-direction: column;
     max-width: 430px;
     padding: 5%;
+    background: #f7f7f8;
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:rgba(100, 100, 111, 0.) 0px 7px 29px 0px;
+    transition: all .3s ease-in-out;
   }
 
   .section {
